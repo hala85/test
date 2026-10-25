@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BONK! — Master Wrestling Rebuild</title>
+    <!-- Load Phaser from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -36,21 +38,10 @@
             transition: transform 0.1s ease;
             z-index: 1000;
         }
-        .comic-bubble:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 20px;
-            border-width: 10px 10px 0;
-            border-style: solid;
-            border-color: #fff transparent;
-            display: block;
-            width: 0;
-        }
     </style>
 </head>
 <body>
     <div id="game-container"></div>
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
 </body>
 </html>
